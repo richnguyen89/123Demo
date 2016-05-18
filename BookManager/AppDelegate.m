@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ListBookViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
+    self.window.backgroundColor = [UIColor whiteColor];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Book" bundle:nil];
+    ListBookViewController *vc = [sb instantiateViewControllerWithIdentifier:@"ListBookViewController"];
+    UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self.window setRootViewController:nv];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
