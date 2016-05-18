@@ -69,7 +69,7 @@
 }
 - (NSInteger)tableView:(UITableView *)tableViews numberOfRowsInSection:(NSInteger)section
 {
-    
+    NSLog(@"numberOf");
     return [books count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableViews cellForRowAtIndexPath:(NSIndexPath *)indexPath {
