@@ -19,6 +19,7 @@
 @synthesize image;
 @synthesize strTittle;
 - (void)viewDidLoad {
+    //log add
     [super viewDidLoad];
     self.imageView.image = self.image;
     self.lblTittle.text = self.strTittle;

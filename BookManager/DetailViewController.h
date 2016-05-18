@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailViewController : UIViewController
-
+//log test
 @property (strong, nonatomic) UIImage *image;
 @property (strong, nonatomic) NSString *strTittle;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
