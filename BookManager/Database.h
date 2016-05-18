@@ -14,7 +14,7 @@
 	NSString *databasePath;
     //NSString *attachPath;
     
-	NSMutableArray *resultArray;
+	NSMutableArray *resultArray; 
     NSString *sqlQuery;
 }
 
