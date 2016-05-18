@@ -49,8 +49,8 @@
             books = [results valueForKey:@"data"];
             for(int i  = 0;i<[books count];i++)
             {
-                NSDictionary * dict = (NSDictionary *)[books objectAtIndex:i];
-                [self addCell:dict];
+                NSDictionary * dict1 = (NSDictionary *)[books objectAtIndex:i];
+                [self addCell:dict1];
             }
             [booksTableView reloadData];
         }
