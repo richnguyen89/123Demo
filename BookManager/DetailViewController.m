@@ -19,6 +19,7 @@
 @synthesize image;
 @synthesize strTittle;
 - (void)viewDidLoad {
+    NSLog(@"GIAUNN TEST");
     //log add
     [super viewDidLoad];
     self.imageView.image = self.image;
